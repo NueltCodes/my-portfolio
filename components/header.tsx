@@ -4,10 +4,11 @@ import { links } from "@/lib/data";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import React, { useContext, useState } from "react";
 
 const Header = () => {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <header className="relative z-[999]">
       <motion.div
@@ -34,7 +35,7 @@ const Header = () => {
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
-                  // setTimeOfLastClick(Date.now());
+                  setTimeOfLastClick(Date.now());
                 }}
               >
                 {link.name}
