@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import reserveImage from "@/public/Reservationapp1.jpg";
+import estoreImage from "@/public/estoreImage.jpg";
+import DaaMarketplace from "@/public/DaaMarketplace.jpg";
 
 export const links = [
   {
@@ -62,25 +62,78 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Reservation app",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Prisma",
+      "MongoDB",
+      "Prisma",
+      "Google console",
+      "Github auth",
+      "Cloudinary",
+      "Tailwind",
+    ],
+    imageUrl: reserveImage,
   },
   {
-    title: "rmtDev",
+    title: "E-store app with customer chat features",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    tags: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Tailwind",
+      "Redux",
+      "JWT",
+      "Stripes",
+      "NodeMailer",
+      "Cloudinary",
+      "Socket.io",
+    ],
+    imageUrl: estoreImage,
   },
   {
-    title: "Word Analytics",
+    title: "Daa_marketPlace",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "MYSQL",
+      "Prisma",
+      "APi's",
+      "Stripes",
+      "Headless.ui",
+      "Tailwind",
+      "Cloudinary",
+    ],
+    imageUrl: DaaMarketplace,
+  },
+  {
+    title: "Ecomerce Admin",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "MYSQL",
+      "Planet scale",
+      "Prisma",
+      "Api's",
+      "Clerk",
+      "Shadcn.ui",
+      "Cloudinary",
+      "Chart.js",
+      "Tailwind",
+    ],
+    imageUrl: DaaMarketplace,
   },
 ] as const;
 
@@ -90,18 +143,17 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React-native",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Redux",
+  "JWT",
+  "Firebase",
+  "Planet scale",
   "Framer Motion",
 ] as const;
