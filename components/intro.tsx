@@ -36,7 +36,7 @@ const Intro = () => {
               height="192"
               quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className="h-80 w-80 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -50,7 +50,7 @@ const Intro = () => {
               duration: 0.2,
             }}
           >
-            👋
+            👌
           </motion.span>
         </div>
       </div>
@@ -61,10 +61,9 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Emmanuel.</span> I'm a{" "}
-        <span className="font-bold">full-stack web & mobile developer</span>{" "}
-        with <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span> as you would see
-        in my start-up projects below. My focus is{" "}
+        <span className="font-bold">full-stack web & mobile developer.</span> I
+        enjoy building <span className="italic">sites & apps</span> as you would
+        see in my start-up projects below. My focus is{" "}
         <span className="underline">
           React (Next.js), Prisma, Typescript Mongodb, and Nodejs
         </span>

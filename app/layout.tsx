@@ -1,17 +1,18 @@
 import Header from "@/components/header";
 import "./globals.css";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import ActiveSectionContextProvider from "@/context/active-section";
+import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
-import { Toaster } from "react-hot-toast";
-import ActiveSectionContextProvider from "@/context/active-section";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Ricardo | Personal Portfolio",
-  description: "Ricardo is a full-stack developer with 8 years of experience.",
+export const metadata: Metadata = {
+  title: "Emmanuel | Personal portfolio",
+  description: "Emmanuel is a full stack web and mobile developer",
 };
 
 export default function RootLayout({
@@ -32,10 +33,9 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-
             <Toaster position="top-right" />
-            <ThemeSwitch />
           </ActiveSectionContextProvider>
+          <ThemeSwitch />
         </ThemeContextProvider>
       </body>
     </html>

@@ -17,3 +17,7 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+.custom-link:hover {
+  @apply group-hover:translate-x-11;
+}

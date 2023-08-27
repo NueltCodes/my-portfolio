@@ -3,10 +3,19 @@ import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
+import { BsBrowserChrome } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
-const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  sourceCode,
+  liveSite,
+  tags,
+  imageUrl,
+}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -24,12 +33,31 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-slate-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-slate-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden  relative sm:h-[20rem] hover:bg-gray-200 transition  dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] overflow-y-scroll scrollbar-hide">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+          <div className="flex items-center md:gap-4 gap-1">
+            <a
+              href={sourceCode}
+              target="_blank"
+              className="bg-slate-500 text-white text-sm px-2 py-1 flex items-center gap-2 rounded-full outline-none sm:focus:scale-110 sm:hover:scale-110 hover:bg-slate-600 active:scale-105 transition group"
+            >
+              View Code{" "}
+              <FaGithubSquare className="opacity-70 group-hover:translate-x-1 transition" />
+            </a>
+            <a
+              href={liveSite}
+              target="_blank"
+              className="group bg-slate-500 text-white text-sm px-2 py-1 flex items-center gap-2 rounded-full outline-none sm:focus:scale-110 sm:hover:scale-110 hover:bg-slate-600 active:scale-105 transition"
+            >
+              Visit Project{" "}
+              <BsBrowserChrome className="opacity-70 group-hover:translate-x-1 transition" />
+            </a>
+          </div>
+
           <ul className="flex flex-wrap mt-4 gap-2  ">
             <p className="font-semibold">Used Tech stack</p>
             {tags.map((tag, index) => (
