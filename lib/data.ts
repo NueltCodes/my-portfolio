@@ -7,6 +7,7 @@ import reserveImage from "@/public/Reservationapp1.jpg";
 import estoreImage from "@/public/estoreImage.jpg";
 import DaaMarketplace from "@/public/DaaMarketplace.jpg";
 import adminDashboard from "@/public/portfolio adminMarketPlace.jpg";
+import reserveMobileApp from "@/public/mobile-reserve-app.jpg";
 
 export const links = [
   {
@@ -72,9 +73,30 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Reservation Mobile App",
+    description:
+      "Reservation Mobile App is a place to stay and relax on your next getaway? Look no further than our Reservation App! With cool features, our app makes it easy to search for lodging options across the globe and find exactly what you’re looking for. Our advanced filter options allow you to search by country, name, or category, and our cool animations makes the experience even more enjoyable, so you can plan your trip on the go. Discover your next adventure with our Reservation App!",
+    sourceCode: "https://github.com/NueltCodes/reservation_mobile_app",
+    liveSite:
+      "https://expo.dev/%40nueltcodes/reserve_app?serviceType=classic&distribution=expo-go&releaseChannel=default/",
+
+    tags: [
+      "React",
+      "React-native",
+      "react-native-swiper",
+      "expo-font",
+      "Firebase",
+      "Firebase auth",
+      "@reduxjs/toolkit",
+      "expo-image-picker",
+      "lottie-react",
+    ],
+    imageUrl: reserveMobileApp,
+  },
+  {
     title: "Reservation App",
     description:
-      "Discover the perfect place to stay and relax with our Reservation App. Search for lodging options across the globe and use our advanced filter options to find exactly what you’re looking for. With features similar to Airbnb, our app makes it easy to plan your next getaway",
+      "Discover the perfect place to stay and relax with our Reservation App. Search for lodging options across the globe and use our advanced filter options to find exactly what you’re looking for. With features similar to Airbnb, our app makes it easy to plan your next getaway.",
     sourceCode: "https://github.com/NueltCodes/reservationApp_startup",
     liveSite: "https://startup-reservation-app.vercel.app/",
     tags: [
@@ -84,13 +106,15 @@ export const projectsData = [
       "Tailwind css",
       "Prisma",
       "MongoDB",
-      "Google console",
+      "NextAuth",
+      "Google auth",
       "Github auth",
       "Cloudinary",
       "lottie-react",
     ],
     imageUrl: reserveImage,
   },
+
   {
     title: "E-Store App with Customer Chat Features",
     description:
@@ -106,6 +130,8 @@ export const projectsData = [
       "JWT",
       "Socket.io",
       "Stripes",
+      "React-icons",
+      "Mui",
       "PayPal",
       "lottie-react",
       "NodeMailer",
@@ -168,7 +194,10 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind css",
+  "React-icons",
+  "Mui",
   "Prisma",
+  "Next auth",
   "MongoDB",
   "Express",
   "Redux",
