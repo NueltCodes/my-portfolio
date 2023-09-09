@@ -71,11 +71,16 @@ const Project = ({
           </ul>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="sm:absolute p-3 sm:p-0 object-contain h-full w-full  sm:block top-8 -right-40 sm:w-[28.25rem] rounded-t-lg shadow-2xl
+        <a
+          href={liveSite}
+          target="_blank"
+          className="group bg-slate-500 text-white text-sm px-2 py-1 flex items-center gap-2 rounded-full outline-none sm:focus:scale-110 sm:hover:scale-110 hover:bg-slate-600 active:scale-105 transition"
+        >
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            className="sm:absolute p-3 sm:p-0 object-contain h-full w-full  sm:block top-8 -right-40 sm:w-[28.25rem] rounded-t-lg shadow-2xl
             transition 
             sm:group-hover:scale-[1.04]
             sm:group-hover:-translate-x-3
@@ -87,7 +92,8 @@ const Project = ({
             sm:group-even:group-hover:rotate-2
     
             sm:group-even:right-[initial] sm:group-even:-left-40"
-        />
+          />
+        </a>
       </section>
     </motion.div>
   );

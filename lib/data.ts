@@ -96,7 +96,7 @@ export const projectsData = [
   {
     title: "Reservation App",
     description:
-      "Discover the perfect place to stay and relax with our Reservation App. Search for lodging options across the globe and use our advanced filter options to find exactly what you’re looking for. With features similar to Airbnb, our app makes it easy to plan your next getaway.",
+      "Engineered the creation of a platform enabling users to effortlessly book accommodations worldwide. Introduced the integration of dynamic filter functionalities and engaging animations to elevate the user experience.Our app makes it easy to plan your next getaway.",
     sourceCode: "https://github.com/NueltCodes/reservationApp_startup",
     liveSite: "https://startup-reservation-app.vercel.app/",
     tags: [
@@ -118,7 +118,7 @@ export const projectsData = [
   {
     title: "E-Store App with Customer Chat Features",
     description:
-      "E-Store is an innovative e-commerce app that allows multiple sellers to create their own stores within the platform. Our app features a customer-to-seller chat system, secure payment options through Stripe and PayPal, and comprehensive admin dashboards for both individual sellers and a universal admin overseeing all seller activity. Shop, sell, and connect with E-Store.",
+      "Implemented a dynamic E-Store app which comes with a customer-to-seller chatting system using Socket.io, facilitating uninterrupted communication between buyers and sellers, thereby elevating the shopping experience, Creatrd secure payment payment gateway, including Stripe and PayPal, to provide customers and sellers with a hassle-free transaction experience. Ensuring the highest level of security and reliability for all financial transactions on the platform, and a comprehensive admin dashboards for both individual sellers and a universal admin overseeing all seller activity.",
     sourceCode: "https://github.com/NueltCodes/mernstack_e_store",
     liveSite: "https://e-store-app-tau.vercel.app/",
     tags: [
@@ -129,10 +129,9 @@ export const projectsData = [
       "Redux",
       "JWT",
       "Socket.io",
-      "Stripes",
-      "React-icons",
-      "Mui",
+      "Stripe",
       "PayPal",
+      "Mui",
       "lottie-react",
       "NodeMailer",
       "Cloudinary",
@@ -152,7 +151,7 @@ export const projectsData = [
       "Headless-ui",
       "Prisma",
       "APi's",
-      "Stripes",
+      "Stripe",
       "Headless.ui",
       "Tailwind css",
       "Cloudinary",
@@ -162,7 +161,7 @@ export const projectsData = [
   {
     title: "Ecomerce Admin App",
     description:
-      "Manage your online store with ease using our E-Commerce Admin App. Our app features customizable options and live graphs to help you track sales, products, and orders in real-time. Create and manage products with options for sizes, colors, categories, and billboard images. Our app also allows you to create multiple dashboards for different e-commerce apps, giving you complete control over your online business.",
+      "E-Commerce Admin CMS. The app features customizable options and live graphs to help you track sales, products, and orders in real-time. Create and manage products with options for sizes, colors, categories, and billboard images. The app also allows you to create multiple dashboards for different e-commerce apps, giving you complete control over your online business.",
     sourceCode: "https://github.com/NueltCodes/next13.4-ecommerce-admin",
     liveSite: "https://next13-4-ecommerce-admin-6gly.vercel.app/",
     tags: [
@@ -190,15 +189,17 @@ export const skillsData = [
   "React",
   "TypeScript",
   "Next.js",
+  "Prisma",
   "React-native",
   "Node.js",
   "Git",
+  "Github",
   "Tailwind css",
   "React-icons",
   "Mui",
-  "Prisma",
   "Next auth",
   "NOSQL",
+  "MYSQL",
   "Express",
   "Redux",
   "JWT",
