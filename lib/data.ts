@@ -3,10 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { IoLogoDesignernews } from "react-icons/io";
 import { TbCertificate } from "react-icons/tb";
-import reserveImage from "@/public/Reservationapp1.jpg";
+import Peer from "@/public/Peer.png";
 import estoreImage from "@/public/estoreImage.jpg";
-import DaaMarketplace from "@/public/DaaMarketplace.jpg";
-import adminDashboard from "@/public/portfolio adminMarketPlace.jpg";
+import Vstrim from "@/public/Vstrim.png";
 import reserveMobileApp from "@/public/mobile-reserve-app.jpg";
 
 export const links = [
@@ -41,7 +40,7 @@ export const experiencesData = [
     title: "Graphic Design",
     location: "Abuja / remote",
     description:
-      "I worked as a graphics desginer at a priniting press and later freelanced for a media company.",
+      "I worked as a graphics desginer at a priniting press and later freelanced for a media company remotely.",
     icon: React.createElement(IoLogoDesignernews),
     date: "2020",
   },
@@ -49,7 +48,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Remote",
     description:
-      "During this role I learnt alot, one of them being re-assigning JWT Tokens to users after redeploying as the domain changes, I led the development of my start-up app, which is an E-store app as you would see in my project section below. This has been a valuable experience that has allowed me to further refine my technical proficiencies and capability in using technical skills to provide services",
+      "During this role I learnt alot, one of them being re-assigning JWT Tokens to users after redeploying as the domain changes, I led the development of my start-up app, which is called Market. This has been a valuable experience that has allowed me to further refine my technical skills and capability to provide software as a services",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
@@ -65,7 +64,7 @@ export const experiencesData = [
     title: "Full-Stack Web & Mobile Developer",
     location: "Remote",
     description:
-      "This role presented me with numerous challenges, but I was able to overcome them and successfully create a Reservation Web & Mobile app. The core technologies I used included React, React-native, Next.js, TypeScript, Tailwind css, Prisma, NOSQL, and Firebase. I am currently seeking full-time opportunities to further develop my skills and contribute to exciting projects.",
+      "This role presented me with numerous challenges, but I was able to overcome them and successfully create a Reservation Web & Mobile app called Peer. Peer was complicated app to create as I had update the codebase with some new feaures and packages.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
@@ -73,137 +72,181 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Reservation Mobile App",
+    title: "Reserve Mobile App",
     description:
-      "Reservation Mobile App is a place to stay and relax on your next getaway? Look no further than our Reservation App! With cool features, our app makes it easy to search for lodging options across the globe and find exactly what you’re looking for. Our advanced filter options allow you to search by country, name, or category, and our cool animations makes the experience even more enjoyable, so you can plan your trip on the go. Discover your next adventure with our Reservation App!",
+      "Reserve is a Mobile platform where you get to find a place to stay and relax. Our app makes it easy to search for lodging options across the globe and find exactly the type of place you are looking for. Discover your next adventure with our Mobile app!",
     sourceCode: "https://github.com/NueltCodes/reservation_mobile_app",
-    liveSite:
-      "https://expo.dev/%40nueltcodes/reserve_app?serviceType=classic&distribution=expo-go&releaseChannel=default/",
+    liveVideo: "https://www.tiktok.com/@olanirantobi/video/7257246536151649542",
 
     tags: [
-      "React",
-      "React-native",
-      "react-native-swiper",
-      "expo-font",
-      "Firebase",
-      "Firebase auth",
-      "@reduxjs/toolkit",
-      "expo-image-picker",
-      "lottie-react",
+      {
+        image: require("../public/html.png").default,
+      },
+      { image: require("../public/Css.png").default },
+      { image: require("../public/javascript.png").default },
+      {
+        image: require("../public/react.png").default,
+      },
+      {
+        image: require("../public/firebase.png").default,
+      },
+      {
+        image: require("../public/expo.png").default,
+      },
     ],
     imageUrl: reserveMobileApp,
   },
   {
-    title: "Reservation App",
+    title: "Vstrim",
     description:
-      "Engineered the creation of a platform enabling users to effortlessly book accommodations worldwide. Introduced the integration of dynamic filter functionalities and engaging animations to elevate the user experience.Our app makes it easy to plan your next getaway.",
-    sourceCode: "https://github.com/NueltCodes/reservationApp_startup",
-    liveSite: "https://startup-reservation-app.vercel.app/",
+      "As the creator of the Vstrim video streaming app. My app offers high-quality streaming services, ensuring smooth playback without buffering issues. It supports a wide range of video formats and provides an intuitive user interface for easy navigation. With features like personalized recommendations and user-friendly controls. I am committed to continuously improving the app, making it the go-to choice for video streaming.",
+    sourceCode: "https://github.com/NueltCodes/VStrim",
+    liveSite: "https://v-strim.vercel.app/",
     tags: [
-      "React",
-      "Next.js",
-      "Typescript",
-      "Tailwind css",
-      "Prisma",
-      "NOSQL",
-      "NextAuth",
-      "Google auth",
-      "Github auth",
-      "Cloudinary",
-      "lottie-react",
+      {
+        image: require("../public/html.png").default,
+      },
+      { image: require("../public/Css.png").default },
+      {
+        image: require("../public/react.png").default,
+      },
+      {
+        image: require("../public/typescript.png").default,
+      },
+      {
+        image: require("../public/nextjs.png").default,
+      },
+      {
+        image: require("../public/tailwindcss.png").default,
+      },
+      {
+        image: require("../public/mysql-logo.png").default,
+      },
+      {
+        image: require("../public/prisma.png").default,
+      },
     ],
-    imageUrl: reserveImage,
+    imageUrl: Vstrim,
+  },
+  {
+    title: "Peer",
+    description:
+      "Engineered a Web platform enabling users to effortlessly book accommodations worldwide. Introduced engaging animations to elevate user experience and the integration of dynamic filter functionalities. Our app makes it easy to plan your next getaway.",
+    sourceCode: "https://github.com/NueltCodes/peer",
+    liveSite: "https://peer-startup.vercel.app/",
+    tags: [
+      {
+        image: require("../public/html.png").default,
+      },
+      { image: require("../public/Css.png").default },
+      {
+        image: require("../public/javascript.png").default,
+      },
+      {
+        image: require("../public/react.png").default,
+      },
+      {
+        image: require("../public/typescript.png").default,
+      },
+      {
+        image: require("../public/nextjs.png").default,
+      },
+      {
+        image: require("../public/mongodb.png").default,
+      },
+      {
+        image: require("../public/tailwindcss.png").default,
+      },
+      {
+        image: require("../public/prisma.png").default,
+      },
+    ],
+    imageUrl: Peer,
   },
 
   {
-    title: "E-Store App with Customer Chat Features",
+    title: "Market",
     description:
-      "Implemented a dynamic E-Store app which comes with a customer-to-seller chatting system using Socket.io, facilitating uninterrupted communication between buyers and sellers, thereby elevating the shopping experience, Creatrd secure payment payment gateway, including Stripe and PayPal, to provide customers and sellers with a hassle-free transaction experience. Ensuring the highest level of security and reliability for all financial transactions on the platform, and a comprehensive admin dashboards for both individual sellers and a universal admin overseeing all seller activity.",
-    sourceCode: "https://github.com/NueltCodes/mernstack_e_store",
-    liveSite: "https://e-store-app-tau.vercel.app/",
+      "Market is an online market place which comes with a customer-to-seller chatting system, facilitating uninterrupted communication between buyers and sellers, thereby elevating the shopping experience, Created a secure payment system, including Stripe and PayPal, to provide customers with a hassle-free transaction experience.",
+    sourceCode: "https://github.com/NueltCodes/market",
+    liveSite: "https://markett.vercel.app/",
     tags: [
-      "React",
-      "Node.js",
-      "NOSQL",
-      "Tailwind css",
-      "Redux",
-      "JWT",
-      "Socket.io",
-      "Stripe",
-      "PayPal",
-      "Mui",
-      "lottie-react",
-      "NodeMailer",
-      "Cloudinary",
+      {
+        image: require("../public/html.png").default,
+      },
+      { image: require("../public/Css.png").default },
+      {
+        image: require("../public/javascript.png").default,
+      },
+      {
+        image: require("../public/react.png").default,
+      },
+      {
+        image: require("../public/mongodb.png").default,
+      },
+      {
+        image: require("../public/redux.png").default,
+      },
+      {
+        image: require("../public/express.png").default,
+      },
+      {
+        image: require("../public/tailwindcss.png").default,
+      },
+      {
+        image: require("../public/socket.io.png").default,
+      },
+      {
+        image: require("../public/paypal.png").default,
+      },
+      {
+        image: require("../public/sttripe.png").default,
+      },
     ],
     imageUrl: estoreImage,
-  },
-  {
-    title: "Daa Marketplace",
-    description:
-      "Discover the latest fashion trends with Daa Marketplace, a clothing e-commerce app that offers a wide selection of clothing in different categories. Our app features advanced filter options, allowing you to easily find the perfect outfit by color, size, and category. Shop for your favorite brands and styles with Daa Marketplace.",
-    sourceCode: "https://github.com/NueltCodes/nextjs-ecommerce-marketplace",
-    liveSite: "https://nextjs-ecommerce-marketplace-6d9y.vercel.app/",
-    tags: [
-      "React",
-      "Next.js",
-      "Typescript",
-      "Headless-ui",
-      "Prisma",
-      "APi's",
-      "Stripe",
-      "Headless.ui",
-      "Tailwind css",
-      "Cloudinary",
-    ],
-    imageUrl: DaaMarketplace,
-  },
-  {
-    title: "Ecomerce Admin App",
-    description:
-      "E-Commerce Admin CMS. The app features customizable options and live graphs to help you track sales, products, and orders in real-time. Create and manage products with options for sizes, colors, categories, and billboard images. The app also allows you to create multiple dashboards for different e-commerce apps, giving you complete control over your online business.",
-    sourceCode: "https://github.com/NueltCodes/next13.4-ecommerce-admin",
-    liveSite: "https://next13-4-ecommerce-admin-6gly.vercel.app/",
-    tags: [
-      "React",
-      "Next.js",
-      "Typescript",
-      "MYSQL",
-      "Planet scale",
-      "Prisma",
-      "Api's",
-      "Clerk",
-      "Shadcn.ui",
-      "Cloudinary",
-      "reChart.js",
-      "Tailwind css",
-    ],
-    imageUrl: adminDashboard,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "TypeScript",
-  "Next.js",
-  "Prisma",
-  "React-native",
-  "Node.js",
-  "Git",
-  "Github",
-  "Tailwind css",
-  "React-icons",
-  "Mui",
-  "Next auth",
-  "NOSQL",
-  "MYSQL",
-  "Express",
-  "Redux",
-  "JWT",
-  "Firebase",
-  "Planet scale",
-  "Framer Motion",
+  { name: "Html", image: require("../public/html.png").default },
+  { name: "Css", image: require("../public/Css.png").default },
+  { name: "Javascript", image: require("../public/javascript.png").default },
+  { name: "React", image: require("../public/react.png").default },
+  { name: "React-native", image: require("../public/react.png").default },
+  { name: "Expo", image: require("../public/expo.png").default },
+  { name: "Redux", image: require("../public/redux.png").default },
+  { name: "Typescript", image: require("../public/typescript.png").default },
+  { name: "Next.js", image: require("../public/nextjs.png").default },
+  { name: "Tailwindcss", image: require("../public/tailwindcss.png").default },
+  { name: "Socket.io", image: require("../public/socket.io.png").default },
+  { name: "Mysql", image: require("../public/mysql-logo.png").default },
+  { name: "Prisma", image: require("../public/prisma.png").default },
+  { name: "Nodejs", image: require("../public/nodejs.png").default },
+  { name: "MongoDB", image: require("../public/mongodb.png").default },
+  { name: "Firebase", image: require("../public/firebase.png").default },
+  { name: "Express", image: require("../public/express.png").default },
+  { name: "git", image: require("../public/git.png").default },
+  // "HTML",
+  // "CSS",
+  // "JavaScript",
+  // "React",
+  // "TypeScript",
+  // "Next.js",
+  // "Prisma",
+  // "React-native",
+  // "Node.js",
+  // "Git",
+  // "Github",
+  // "Tailwind css",
+  // "React-icons",
+  // "Mui",
+  // "Next auth",
+  // "NOSQL",
+  // "MYSQL",
+  // "Express",
+  // "Redux",
+  // "JWT",
+  // "Firebase",
+  // "Planet scale",
+  // "Framer Motion",
 ] as const;

@@ -4,6 +4,8 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import AnimateInfo from "@/public/info.json";
+import Lottie from "lottie-react";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -11,45 +13,33 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-20 flex flex-col items-center max-w-[45rem] text-center leading-8 sm:mb-28 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        As an experienced Graphics designer, I discovered my interest for
-        programming, I then embarked on a transformative journey to transition
-        into <span className="font-medium">full-stack web developer</span>, I
-        immersed myself in a rigorous coding activity where I honed my skills
-        and also had lots challenge as there's nothing more rewarding than
-        arriving at a solution after navigating through challenges. I hold a
-        certificate from{" "}
-        <span className="font-medium">
-          Meta Fullstack Mobile Development course, which modified my strenght
-          in mobile development and was perfect icing to my skillset, It also
-          solidified my dedication to staying at the forefront in this industry.
+      <SectionHeading>
+        <div className="bg-slate-300 rounded-full w-[200px]">
+          {" "}
+          <Lottie
+            animationData={AnimateInfo}
+            loop
+            autoplay
+            style={{ height: 100, width: 200 }}
+          />
+        </div>
+      </SectionHeading>
+      <div className="max-w-[42rem] font-semibold text-[25px] text-center text-red-500">
+        Note:{" "}
+        <span className="font-medium text-lg dark:text-gray-100 text-gray-950">
+          {" "}
+          To launch the <b>Mobile app</b> below, you must first install{" "}
+          <b>Expo Go</b> on an Android device so as to test the app live on your
+          device. Then, scan the barcode from the app below on Expo Go to
+          install the app.
         </span>
-        <span> With 4 years of experience in graphics design,</span> I bring my
-        own creativity into coding projects. This unique blend allows me to
-        bridge the gap between design aesthetics and functional code. My core
-        stack is{" "}
-        <span className="font-medium">
-          React, React-native, Next.js, Typescript, Prisma, Node.js, and MongoDB
-        </span>
-        . I am also lover of TypeScript. I am always looking to learn new
-        technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing keyboard. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning <span className="font-medium">French</span>.
-      </p>
+      </div>
     </motion.section>
   );
 }
