@@ -10,8 +10,8 @@ type ProjectProps = {
   title: string;
   description: string;
   sourceCode: string;
-  liveVideo: string;
-  liveSite: string;
+  liveVideo?: string;
+  liveSite?: string;
   tags: readonly { image: string }[];
   imageUrl: StaticImageData;
 };
