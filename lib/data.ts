@@ -114,6 +114,9 @@ export const projectsData = [
         image: require("../public/typescript.png").default,
       },
       {
+        image: require("../public/trpc.png").default,
+      },
+      {
         image: require("../public/nextjs.png").default,
       },
       {
@@ -211,6 +214,7 @@ export const skillsData = [
   { name: "Html", image: require("../public/html.png").default },
   { name: "Css", image: require("../public/Css.png").default },
   { name: "Javascript", image: require("../public/javascript.png").default },
+  { name: "Trpc", image: require("../public/trpc.png").default },
   { name: "React", image: require("../public/react.png").default },
   { name: "React-native", image: require("../public/react.png").default },
   { name: "Expo", image: require("../public/expo.png").default },
