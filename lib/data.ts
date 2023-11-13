@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoDesignernews } from "react-icons/io";
 import { TbCertificate } from "react-icons/tb";
 import Peer from "@/public/Peer.png";
-import estoreImage from "@/public/estoreImage.jpg";
+import market from "@/public/market.png";
 import Vstrim from "@/public/Vstrim.png";
 import reserveMobileApp from "@/public/mobile-reserve-app.jpg";
 
@@ -206,7 +206,7 @@ export const projectsData = [
         image: require("../public/sttripe.png").default,
       },
     ],
-    imageUrl: estoreImage,
+    imageUrl: market,
   },
 ] as const;
 
