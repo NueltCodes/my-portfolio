@@ -2,11 +2,13 @@
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 import { BsBrowserChrome } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 
 type ProjectProps = {
+  id: string;
   title: string;
   description: string;
   sourceCode: string;
@@ -18,6 +20,7 @@ type ProjectProps = {
 
 // Define the Project component
 const Project: React.FC<ProjectProps> = ({
+  id,
   title,
   description,
   sourceCode,
@@ -36,6 +39,8 @@ const Project: React.FC<ProjectProps> = ({
 
   const [git, setGit] = useState(false);
   const [live, setLive] = useState(false);
+  const [openModel, setOpenModel] = useState(false);
+  const route = useRouter();
   return (
     <motion.div
       ref={ref}
@@ -45,12 +50,18 @@ const Project: React.FC<ProjectProps> = ({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-slate-100 max-w-[55rem] border border-black/5 rounded-lg overflow-hidden overflow-y-scroll scrollbar-hide relative sm:h-[20rem] hover:bg-gray-200 transition  dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-slate-100 max-w-[45rem] border border-black/5 rounded-lg overflow-hidden scrollbar-hide relative sm:h-[20rem] hover:bg-gray-200 transition  dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 md:pt-10 sm:max-w-[70%] flex flex-col h-full sm:group-odd:mr-[22rem] sm:group-even:ml-[20rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 line-clamp-3">
             {description}
           </p>
+          <span
+            onClick={() => route.push(`/projectDetails/${id}`)}
+            className="w-[100px] text-blue-500 hover:text-blue-300 cursor-pointer transition dark:hover:text-gray-300"
+          >
+            read more
+          </span>
           <div className="flex mt-2 items-center md:gap-4 gap-1">
             <a
               onMouseEnter={() => setGit(true)}

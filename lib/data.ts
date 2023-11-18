@@ -72,6 +72,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: "0",
     title: "Reserve Mobile App",
     description:
       "Reserve is a Mobile platform where you get to find a place to stay and relax. Our app makes it easy to search for lodging options across the globe and find exactly the type of place you are looking for. Discover your next adventure with our Mobile app!",
@@ -97,6 +98,8 @@ export const projectsData = [
     imageUrl: reserveMobileApp,
   },
   {
+    id: "1",
+
     title: "Vstrim",
     description:
       "As the creator of the Vstrim video streaming app. My app offers high-quality streaming services, ensuring smooth playback without buffering issues. It supports a wide range of video formats and provides an intuitive user interface for easy navigation. With features like personalized recommendations and user-friendly controls. I am committed to continuously improving the app, making it the go-to choice for video streaming.",
@@ -132,6 +135,8 @@ export const projectsData = [
     imageUrl: Vstrim,
   },
   {
+    id: "2",
+
     title: "Peer",
     description:
       "Engineered a Web platform enabling users to effortlessly book accommodations worldwide. Introduced engaging animations to elevate user experience and the integration of dynamic filter functionalities. Our app makes it easy to plan your next getaway.",
@@ -168,6 +173,8 @@ export const projectsData = [
   },
 
   {
+    id: "3",
+
     title: "Market",
     description:
       "Market is an online market place which comes with a customer-to-seller chatting system, facilitating uninterrupted communication between buyers and sellers, thereby elevating the shopping experience, Created a secure payment system, including Stripe and PayPal, to provide customers with a hassle-free transaction experience.",
