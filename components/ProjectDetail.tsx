@@ -52,7 +52,7 @@ const ProjectDetail: React.FC = () => {
               {foundProject.info && (
                 <div className="text-[18px] font-semibold text-red-600 mt-3">
                   Note
-                  <div className="flex items-start gap-3">
+                  <div className="flex flex-wrap items-start gap-4">
                     <p className="font-normal mt-2 leading-relaxed text-gray-700 dark:text-white/70">
                       {foundProject.info}
                     </p>
