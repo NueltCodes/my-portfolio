@@ -10,11 +10,16 @@ type ProjectProps = {
   id: string;
   title: string;
   description: string;
+  info?: string;
   sourceCode: string;
   liveSite?: string; // Add this line
   liveVideo?: string;
   tags: readonly { image: string }[];
+  screenShots?: readonly { image: string }[];
   imageUrl: StaticImageData;
+  barCode?: StaticImageData;
+  logins?: string;
+  password?: string;
 };
 
 const ProjectDetail: React.FC = () => {
@@ -28,12 +33,67 @@ const ProjectDetail: React.FC = () => {
     <div className="mb-10">
       {foundProject ? (
         <>
-          <section className="bg-slate-100 max-w-[55rem] border border-black/5 rounded-lg overflow-hidden scrollbar-hide relative sm:h-[20rem] hover:bg-gray-200 transition  dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+          <section className="bg-slate-100 max-w-[55rem] border border-black/5 rounded-lg overflow-hidden scrollbar-hide relative  hover:bg-gray-200 transition  dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <div className="pt-4 pb-7 px-5 md:pt-10 flex flex-col h-full">
               <h3 className="text-2xl font-semibold">{foundProject.title}</h3>
+              {foundProject.logins && (
+                <>
+                  <p className="font-medium text-sm mt-2">Login credentials</p>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-[15px] font-medium">
+                      {"U: " + foundProject.logins}
+                    </h3>
+                    <h3 className="text-[15px] font-medium">
+                      {"P: " + foundProject.password}
+                    </h3>
+                  </div>
+                </>
+              )}
+              {foundProject.info && (
+                <div className="text-[18px] font-semibold text-red-600 mt-3">
+                  Note
+                  <div className="flex items-start gap-3">
+                    <p className="font-normal mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+                      {foundProject.info}
+                    </p>
+
+                    <Image
+                      src={foundProject.barCode ?? ""}
+                      width={200}
+                      height={100}
+                      alt="Barcode to app"
+                      className=""
+                    />
+                  </div>
+                </div>
+              )}
+
+              <p className="mt-3 text-[18px] font-semibold text-gray-700 dark:text-white/70">
+                About
+              </p>
               <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
                 {foundProject.description}
               </p>
+
+              <h2 className="mt-4 mb-2 text-[18px] font-semibold text-gray-700 dark:text-white/70">
+                Preview
+              </h2>
+              <ul className="flex flex-wrap gap-2  ">
+                {foundProject.screenShots?.map((tag, index) => (
+                  <li
+                    className="text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                    key={index}
+                  >
+                    <Image
+                      src={tag.image}
+                      width={100}
+                      height={100}
+                      alt="Project I worked on"
+                      className=""
+                    />
+                  </li>
+                ))}
+              </ul>
 
               <div className="flex mt-2 items-center md:gap-4 gap-1">
                 <a

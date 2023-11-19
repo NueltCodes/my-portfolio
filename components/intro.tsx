@@ -59,7 +59,7 @@ const Intro = () => {
       </div>
 
       <motion.h1
-        className="mb-5 mt-4 px-4 text-lg font-medium !leading-[1.5] sm:text-2xl"
+        className="mb-5 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -106,7 +106,7 @@ const Intro = () => {
           delay: 0.1,
         }}
       >
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-10 px-4 text-lg font-medium">
+        <div className="flex flex-col  sm:flex-row items-center justify-center gap-10 px-4 text-lg font-medium">
           <div className="flex gap-3">
             <a
               className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 active:scale-105 

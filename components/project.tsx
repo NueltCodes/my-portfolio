@@ -14,6 +14,7 @@ type ProjectProps = {
   sourceCode: string;
   liveVideo?: string;
   liveSite?: string;
+  logins?: string;
   tags: readonly { image: string }[];
   imageUrl: StaticImageData;
 };
@@ -25,6 +26,7 @@ const Project: React.FC<ProjectProps> = ({
   description,
   sourceCode,
   liveSite,
+  logins,
   liveVideo,
   tags,
   imageUrl,
@@ -56,12 +58,22 @@ const Project: React.FC<ProjectProps> = ({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 line-clamp-3">
             {description}
           </p>
-          <span
-            onClick={() => route.push(`/projectDetails/${id}`)}
-            className="w-[100px] text-blue-500 hover:text-blue-300 cursor-pointer transition dark:hover:text-gray-300"
-          >
-            read more
-          </span>
+          <div className="flex items-center gap-3">
+            <span
+              onClick={() => route.push(`/projectDetails/${id}`)}
+              className="w-[100px] text-blue-500 text-sm hover:text-blue-300 cursor-pointer transition dark:hover:text-gray-300"
+            >
+              read more
+            </span>
+            {logins && (
+              <span
+                onClick={() => route.push(`/projectDetails/${id}`)}
+                className="w-[100px] text-blue-500 text-sm hover:text-blue-300 cursor-pointer transition dark:hover:text-gray-300"
+              >
+                login details
+              </span>
+            )}
+          </div>
           <div className="flex mt-2 items-center md:gap-4 gap-1">
             <a
               onMouseEnter={() => setGit(true)}

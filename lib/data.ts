@@ -7,6 +7,7 @@ import Peer from "@/public/Peer.png";
 import market from "@/public/market.png";
 import Vstrim from "@/public/Vstrim.png";
 import reserveMobileApp from "@/public/mobile-reserve-app.jpg";
+import reserveBarCode from "@/public/reserve-barcode.jpg";
 
 export const links = [
   {
@@ -78,7 +79,24 @@ export const projectsData = [
       "Reserve is a Mobile platform where you get to find a place to stay and relax. Our app makes it easy to search for lodging options across the globe and find exactly the type of place you are looking for. Discover your next adventure with our Mobile app!",
     sourceCode: "https://github.com/NueltCodes/reservation_mobile_app",
     liveVideo: "https://www.tiktok.com/@olanirantobi/video/7257246536151649542",
+    info: "To launch the Mobile app below, you must first install Expo Go on an Android device so as to test the app live on your device. Then from the app scan the barcode and you have the access to the mobile app.",
 
+    screenShots: [
+      {
+        image: require("../public/html.png").default,
+      },
+      { image: require("../public/Css.png").default },
+      { image: require("../public/javascript.png").default },
+      {
+        image: require("../public/react.png").default,
+      },
+      {
+        image: require("../public/firebase.png").default,
+      },
+      {
+        image: require("../public/expo.png").default,
+      },
+    ],
     tags: [
       {
         image: require("../public/html.png").default,
@@ -96,6 +114,7 @@ export const projectsData = [
       },
     ],
     imageUrl: reserveMobileApp,
+    barCode: reserveBarCode,
   },
   {
     id: "1",
@@ -140,6 +159,8 @@ export const projectsData = [
     title: "Peer",
     description:
       "Engineered a Web platform enabling users to effortlessly book accommodations worldwide. Introduced engaging animations to elevate user experience and the integration of dynamic filter functionalities. Our app makes it easy to plan your next getaway.",
+    logins: "test@gmail.com",
+    password: "12345678",
     sourceCode: "https://github.com/NueltCodes/peer",
     liveSite: "https://peer-startup.vercel.app/",
     tags: [

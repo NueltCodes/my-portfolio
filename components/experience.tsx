@@ -57,15 +57,19 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p
+              <div
                 onClick={() => {
                   setIsOpen(true);
                   setCurrentItem(item);
                 }}
-                className="!mt-1 !font-normal text-gray-700 dark:text-white/75 line-clamp-3 cursor-pointer"
+                className="!mt-1 !font-normal text-gray-700 dark:text-white/75  cursor-pointer"
               >
-                {item.description + " read more"}
-              </p>
+                {" "}
+                <p className="line-clamp-2">{item.description}</p>
+                <span className="text-sm hover:opacity-60 transition">
+                  read more
+                </span>
+              </div>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
