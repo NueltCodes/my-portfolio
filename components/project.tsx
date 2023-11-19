@@ -50,7 +50,7 @@ const Project: React.FC<ProjectProps> = ({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0 shadow-lg"
     >
       <section className="bg-slate-100 max-w-[45rem] border border-black/5 rounded-lg overflow-hidden scrollbar-hide relative sm:h-[20rem] hover:bg-gray-200 transition  dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 md:pt-10 sm:max-w-[70%] flex flex-col h-full sm:group-odd:mr-[22rem] sm:group-even:ml-[20rem]">
