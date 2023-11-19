@@ -33,7 +33,7 @@ const ProjectDetail: React.FC = () => {
     <div className="mb-10">
       {foundProject ? (
         <>
-          <section className="bg-slate-100 max-w-[55rem] border border-black/5 rounded-lg overflow-hidden scrollbar-hide relative  hover:bg-gray-200 transition  dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+          <section className="bg-slate-100 max-w-[55rem] border border-black/5 rounded-lg overflow-hidden scrollbar-hide relative  hover:bg-[#dbd7fb] transition ease-in-out dark:text-white dark:bg-white/10 dark:hover:bg-white/5 shadow-lg">
             <div className="pt-4 pb-7 px-5 md:pt-10 flex flex-col h-full">
               <h3 className="text-2xl font-semibold">{foundProject.title}</h3>
               {foundProject.logins && (
@@ -75,21 +75,31 @@ const ProjectDetail: React.FC = () => {
                 {foundProject.description}
               </p>
 
-              <h2 className="mt-4 mb-2 text-[18px] font-semibold text-gray-700 dark:text-white/70">
-                Preview
-              </h2>
-              <ul className="flex flex-wrap gap-2  ">
-                {foundProject.screenShots?.map((tag, index) => (
+              <Image
+                src={foundProject.imageUrl}
+                width={200}
+                height={200}
+                alt="Project image"
+                className="object-cover w-full my-4"
+              />
+
+              {foundProject.screenShots && (
+                <h2 className="mt-4 mb-2 text-[18px] font-semibold text-gray-700 dark:text-white/70">
+                  Preview
+                </h2>
+              )}
+              <ul className="flex flex-wrap justify-center  gap-2  ">
+                {foundProject.screenShots?.map((screens, index) => (
                   <li
                     className="text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                     key={index}
                   >
                     <Image
-                      src={tag.image}
-                      width={100}
+                      src={screens.image}
+                      width={200}
                       height={100}
                       alt="Project I worked on"
-                      className=""
+                      className=" object-cover"
                     />
                   </li>
                 ))}
@@ -130,7 +140,7 @@ const ProjectDetail: React.FC = () => {
                       height={25}
                       alt="Project I worked on"
                       className="bg-white rounded-full"
-                    />{" "}
+                    />
                   </li>
                 ))}
               </ul>

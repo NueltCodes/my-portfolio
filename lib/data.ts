@@ -14,10 +14,10 @@ export const links = [
     name: "Home",
     hash: "#home",
   },
-  {
-    name: "About",
-    hash: "#about",
-  },
+  // {
+  //   name: "About",
+  //   hash: "#about",
+  // },
   {
     name: "Projects",
     hash: "#projects",
@@ -83,18 +83,27 @@ export const projectsData = [
 
     screenShots: [
       {
-        image: require("../public/html.png").default,
+        image: require("../public/1.png").default,
       },
-      { image: require("../public/Css.png").default },
-      { image: require("../public/javascript.png").default },
+      { image: require("../public/2.png").default },
+      { image: require("../public/3.png").default },
       {
-        image: require("../public/react.png").default,
-      },
-      {
-        image: require("../public/firebase.png").default,
+        image: require("../public/4.png").default,
       },
       {
-        image: require("../public/expo.png").default,
+        image: require("../public/5.png").default,
+      },
+      {
+        image: require("../public/6.png").default,
+      },
+      {
+        image: require("../public/7.png").default,
+      },
+      {
+        image: require("../public/8.png").default,
+      },
+      {
+        image: require("../public/9.png").default,
       },
     ],
     tags: [
@@ -121,7 +130,7 @@ export const projectsData = [
 
     title: "Vstrim",
     description:
-      "As the creator of the Vstrim video streaming app. My app offers high-quality streaming services, ensuring smooth playback without buffering issues. It supports a wide range of video formats and provides an intuitive user interface for easy navigation. With features like personalized recommendations and user-friendly controls. I am committed to continuously improving the app, making it the go-to choice for video streaming.",
+      "Developed and launched Vstrim, a cutting-edge video streaming app that provides users with a wide range of high-quality content. The app supports multiple video formats, ensuring compatibility and accessibility for all users. Implemented an advanced streaming algorithm that ensures smooth playback without buffering issues, thereby enhancing the user experience. The app is designed to adapt to varying network conditions, providing uninterrupted streaming even in low-bandwidth situations.Designed a user-friendly interface with intuitive controls, making it easy for users to navigate the app and find their desired content. The app also includes features like playlists, engagements and viewing history for a more personalized experience.",
     sourceCode: "https://github.com/NueltCodes/VStrim",
     liveSite: "https://v-strim.vercel.app/",
     tags: [
@@ -158,7 +167,7 @@ export const projectsData = [
 
     title: "Peer",
     description:
-      "Engineered a Web platform enabling users to effortlessly book accommodations worldwide. Introduced engaging animations to elevate user experience and the integration of dynamic filter functionalities. Our app makes it easy to plan your next getaway.",
+      "Engineered a Web platform enabling users to effortlessly book accommodations worldwide. Introduced engaging animations to elevate user experience and the integration of dynamic filter functionalities. Implemented a dynamic system where Hosts gets to see the number of traffic their home are getting either from registered users or unregistered users. Peer makes it easy to plan your next getaway.",
     logins: "test@gmail.com",
     password: "12345678",
     sourceCode: "https://github.com/NueltCodes/peer",

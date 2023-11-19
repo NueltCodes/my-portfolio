@@ -66,7 +66,7 @@ export default function Experience() {
               >
                 {" "}
                 <p className="line-clamp-2">{item.description}</p>
-                <span className="text-sm hover:opacity-60 transition">
+                <span className="text-blue-500 text-sm hover:text-blue-300 cursor-pointer transition dark:hover:text-gray-300">
                   read more
                 </span>
               </div>

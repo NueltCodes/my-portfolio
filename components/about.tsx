@@ -8,11 +8,11 @@ import AnimateInfo from "@/public/info.json";
 import Lottie from "lottie-react";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  // const { ref } = useSectionInView("About");
 
   return (
     <motion.section
-      ref={ref}
+      // ref={ref}
       className="mb-20 flex flex-col items-center max-w-[45rem] text-center leading-8 sm:mb-28 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
