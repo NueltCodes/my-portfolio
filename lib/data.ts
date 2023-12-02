@@ -78,7 +78,7 @@ export const projectsData = [
     description:
       "Reserve is a Mobile platform where you get to find a place to stay and relax. Our app makes it easy to search for lodging options across the globe and find exactly the type of place you are looking for. Discover your next adventure with our Mobile app!",
     sourceCode: "https://github.com/NueltCodes/reservation_mobile_app",
-    liveVideo: "https://www.tiktok.com/@olanirantobi/video/7257246536151649542",
+    // liveVideo: "https://www.tiktok.com/@olanirantobi/video/7257246536151649542",
     info: "To launch the Mobile app below, you must first install Expo Go on an Android device so as to test the app live on your device. Then from the app scan the barcode and you have the access to the mobile app.",
 
     screenShots: [
