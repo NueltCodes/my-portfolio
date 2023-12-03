@@ -63,7 +63,7 @@ const Project: React.FC<ProjectProps> = ({
               onClick={() => route.push(`/projectDetails/${id}`)}
               className="w-[100px] text-blue-500 text-sm hover:text-blue-300 cursor-pointer transition dark:hover:text-gray-300"
             >
-              read more
+              Open
             </span>
             {logins && (
               <span
@@ -89,20 +89,22 @@ const Project: React.FC<ProjectProps> = ({
                 } opacity-70  transition`}
               />
             </a>
-            <a
-              onMouseEnter={() => setLive(true)}
-              onMouseLeave={() => setLive(false)}
-              href={liveSite ? liveSite : liveVideo}
-              target="_blank"
-              className="group bg-slate-500 text-white text-sm px-2 py-1 flex items-center gap-2 rounded-full outline-none   hover:bg-slate-600 active:scale-105 transition"
-            >
-              {liveSite ? "View App" : "Live Video"}
-              <BsBrowserChrome
-                className={` ${
-                  live ? "group-hover:translate-x-1" : ""
-                } opacity-70  transition`}
-              />
-            </a>
+            {liveVideo && (
+              <a
+                onMouseEnter={() => setLive(true)}
+                onMouseLeave={() => setLive(false)}
+                href={liveSite ? liveSite : liveVideo}
+                target="_blank"
+                className="group bg-slate-500 text-white text-sm px-2 py-1 flex items-center gap-2 rounded-full outline-none   hover:bg-slate-600 active:scale-105 transition"
+              >
+                {liveSite ? "View App" : "Live Video"}
+                <BsBrowserChrome
+                  className={` ${
+                    live ? "group-hover:translate-x-1" : ""
+                  } opacity-70  transition`}
+                />
+              </a>
+            )}
           </div>
 
           <ul className="flex flex-wrap mt-4 gap-2  ">
