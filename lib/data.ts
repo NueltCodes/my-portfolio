@@ -42,9 +42,7 @@ export const experiencesData = [
     title: "Full-Stack Developer - YeahsTech Agency",
     location: "Remote",
     description:
-      "Developed and implemented numerous software solutions tailored to client needs. In collaboration with my team, developed an innovative offline app for a club. This initiative significantly drove productivity gains to 10X than before, A significant achievement was the design of robust management systems for several clients which foster development to about 55%.These systems increased productivity and introduced measures to prevent any potential malpractices or theft, thereby fortifying the interests of our clients’ companies. Maintained and updated existing applications, ensuring seamless integration.”
-
-.",
+      "Developed and implemented numerous software solutions tailored to client needs. In collaboration with my team, developed an innovative offline app for a club. This initiative significantly drove productivity gains to 10X than before, A significant achievement was the design of robust management systems for several clients which foster development to about 55%.These systems increased productivity and introduced measures to prevent any potential malpractices or theft, thereby fortifying the interests of our clients’ companies. Maintained and updated existing applications, ensuring seamless integration.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
