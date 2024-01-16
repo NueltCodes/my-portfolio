@@ -37,21 +37,24 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+ 
   {
-    title: "Graphic Design",
+    title: "Full-Stack Developer - YeahsTech Agency",
+    location: "Remote",
+    description:
+      "Developed and implemented numerous software solutions tailored to client needs. In collaboration with my team, developed an innovative offline app for a club. This initiative significantly drove productivity gains to 10X than before, A significant achievement was the design of robust management systems for several clients which foster development to about 55%.These systems increased productivity and introduced measures to prevent any potential malpractices or theft, thereby fortifying the interests of our clients’ companies. Maintained and updated existing applications, ensuring seamless integration.”
+
+.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
+  },
+   {
+    title: "Graphic Design - Obent media",
     location: "Abuja / remote",
     description:
       "I worked as a graphics desginer at a priniting press and later freelanced for a media company remotely.",
     icon: React.createElement(IoLogoDesignernews),
     date: "2020",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Remote",
-    description:
-      "During this role I learnt alot, one of them being re-assigning JWT Tokens to users after redeploying as the domain changes, I led the development of my start-up app, which is called Market. This has been a valuable experience that has allowed me to further refine my technical skills and capability to provide software as a services",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
   },
   {
     title: "Meta Fullstack Mobile Certificate",
