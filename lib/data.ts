@@ -254,7 +254,7 @@ export const skillsData = [
   { name: "Javascript", image: require("../public/javascript.png").default },
   { name: "C#", image: require("../public/C#.png").default },
   { name: ".Net Core", image: require("../public/NET core.png").default },
-  { name: "SQL", image: require("../public/SQL Database").default },
+  { name: "SQL", image: require("../public/SQL Database.png").default },
   { name: "Trpc", image: require("../public/trpc.png").default },
   { name: "React", image: require("../public/react.png").default },
   { name: "React-native", image: require("../public/react.png").default },
